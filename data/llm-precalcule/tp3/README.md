@@ -1,6 +1,6 @@
-# Sorties LLM précalculées — TP 3 (plan B si Ollama est indisponible)
+# Sorties d'exercice — TP 3 (plan B si Ollama est indisponible)
 
-Même principe que pour le TP 2 : sorties typiques d'un 7B, défauts compris, à tester et à corriger comme si elles sortaient du workflow.
+Même principe que pour le TP 2 : sorties rédigées pour le TP, avec des défauts illustratifs. Ce ne sont pas des sorties vérifiées d'un modèle, et les défauts du direct sont différents. À tester et à corriger comme si elles sortaient du workflow.
 
 - `silex7-loaderx-ia.yar` : compile ; mais `$s3` (`Mozilla/5.0`) est trop générique et `2 of them` peut matcher des fichiers sains qui
   contiennent « LoaderX » et un User-Agent ; `$s2` reprend le mutex avec un double antislash à vérifier. Tester sur `data/samples/` et `data/corpus-sain/`.
