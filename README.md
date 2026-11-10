@@ -44,7 +44,7 @@ OpenCTI, séance 4 : en 2026, vous n'installez pas OpenCTI. Vous importez vos do
 docker compose --profile tools run --rm osint-tools misp-vers-opencti.py <id d'événement> <numéro de groupe>
 ```
 
-Le fichier est écrit dans `out/`, et l'import se fait par *Data* → *Import* (voir `seance4/tp.md`, partie B). L'en-tête du script explique ce qu'il retire et pourquoi.
+Le fichier est écrit dans `out/`, et l'import se fait par *Data* → *Import* (voir `seances/seance4/eleves/IT320-TP4.md`, partie B). L'en-tête du script explique ce qu'il retire et pourquoi.
 
 Votre propre OpenCTI (sur une VM du groupe, ou chez vous avec 16 Go de RAM : facultatif en 2026) : prérequis `sudo sysctl -w vm.max_map_count=262144` (à persister dans `/etc/sysctl.d/99-opensearch.conf`), compléter la section OpenCTI de `.env` (six UUID : `OPENCTI_ADMIN_TOKEN`, `OPENCTI_HEALTHCHECK_ACCESS_KEY`, `CONNECTOR_MITRE_ID`, `CONNECTOR_MISP_ID`, `CONNECTOR_EXPORT_STIX_ID`, `CONNECTOR_IMPORT_STIX_ID`), puis `docker compose -f docker-compose.opencti.yml up -d` ; interface sur http://<vm>:8080 ; premier démarrage 10 à 15 min, puis le connecteur MITRE charge ATT&CK pendant plus d'une heure (mesuré le 1er novembre 2026) : la plateforme est utilisable pendant ce temps, mais les relations arrivent en dernier.
 

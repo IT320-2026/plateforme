@@ -2,7 +2,7 @@
 
 # Surface d'attaque exposée — <PME> — TLP:AMBER — <AAAA-MM-JJ>
 
-*Gabarit du TP 1 (`seance1/tp.md`, partie B). Style fiche de CERT : concis, sourcé, actionnable. Date de rédaction en titre ; date des sources dans le journal. Exemple complet : `../exemple-fiche-surface-attaque.md`.*
+*Gabarit du TP 1 (`seances/seance1/eleves/IT320-TP1-en-ligne.md`, partie B). Style fiche de CERT : concis, sourcé, actionnable. Date de rédaction en titre ; date des sources dans le journal. Exemple complet : `../exemple-fiche-surface-attaque.md`.*
 
 ## 1. Synthèse
 
